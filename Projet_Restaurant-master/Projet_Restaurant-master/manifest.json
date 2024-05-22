@@ -1,0 +1,21 @@
+{
+  "short_name": "Casa Patti",
+  "name": "La Casa di Patti",
+  "icons": [
+    {
+      "src": "images/icone192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icone512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/Projet-Restaurant/acceuil.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/Projet-Restaurant/",
+  "theme_color": "#3367D6"
+}

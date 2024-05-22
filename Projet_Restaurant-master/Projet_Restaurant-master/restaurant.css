@@ -1,0 +1,63 @@
+/* reset css */
+/* html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+padding: 0; margin: 0;
+}
+html,body{
+display: block;
+height: 100%; width: 100%;
+overflow: hidden;
+}
+ul,li,a{
+margin: 0; padding: 0;
+list-style: none;
+text-decoration: none;
+} */
+
+/* acceuil css */
+
+.jumbotron {
+  background-image: url("images/background.jpg");
+  background-size: 100% auto;
+  background-repeat:no-repeat;
+}
+
+#entete h1 {
+  font-family: "Lucida calligraphy";
+  text-align: center;
+  text-shadow: green 3px 1px, white 6px 1px, red 9px 1px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #entete p {
+    font-family: "Lucida calligraphy";
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(red, white, green);
+    text-shadow: green 1px 1px, white 2px 2px, red 3px 3px;
+}
+
+body {
+  word-wrap: break-word;
+}
+#contact {
+  width: 100%;
+height: 50px;
+  background: linear-gradient(to right, green , white, white, red);
+  text-align: center;
+  display: inline-block;
+  color: black;
+  line-height: 50px;
+
+}
+
+.google {
+  height: 450px;
+  max-width: 600px;
+  width: 100%;
+}

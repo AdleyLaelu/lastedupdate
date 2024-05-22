@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Description" content="Restaurant italien">
+  <meta name="theme-color" content="white">
+  <title>La casa di Patti</title>
+  <link rel="stylesheet" type="text/css" href="./contact.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+  <div class="main">
+    <div class="main-header">
+      <div class="jumbotron">
+        <div id="entete">
+          <h1>La Casa di Patti</h1>
+          <p>Ristorante Italiano</p>
+        </div>
+      </div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">La Casa di Patti</a>
+          </div>
+          <div class="navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="carte.html">Carte</a></li>
+              <li><a href="photos.html">Photos</a></li>
+              <li><a href="restaurant.html">Restaurant</a></li>
+              <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="main-container">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-6">
+        <form>
+          <div class="contact">
+            <div class="form-group">
+                <label for="fname">Nom</label>
+                <input type="text" id="fname" name="firstname" placeholder="Entrez votre nom">
+            </div>
+            <div class="form-group">
+                <label for="lname">Prénom</label>
+                <input type="text" id="lname" name="lastname" placeholder="Entrez votre prénom">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Entrez votre e-mail"></label>
+            </div>
+            <div class="form-group">
+                <label for="message">Objet du message</label>
+                <select id="message" name="message">
+                  <option value="reservation">Réservation</option>
+                  <option value="réclamation">Réclamation</option>
+                  <option value="evenement">Evénements</option>
+                  <option value="autre">Autre</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Posez votre question ici" style="height:200px"></textarea>
+            </div>
+            <div class="bouton">
+              <input type="submit" value="Envoyer">
+            </div>
+          </form>
+        </div>
+    </div>
+      <div class="col-sm-3">
+        <a href="https://fr.tripadvisor.be/" target="_blank"><span class="label label-success" id="label1"><i class="fab fa-tripadvisor"> Tripadvisor</i></span></a>
+        <a href="https://fr-fr.facebook.com/" target="_blank"><br><span class="label label-info" id="label2"><i class="fab fa-facebook-square"> Facebook</i></span></br></a>
+        <a href="https://www.instagram.com/?hl=fr" target="_blank"><span class="label label-danger" id="label3"><i class="fab fa-instagram"> Instagram</i></span></a>
+      </div>
+    </div>
+    <div class="main-footer">
+      <div id="contact">
+        <p class="content5">AntoniDalleNogare© 2018</p>
+      </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

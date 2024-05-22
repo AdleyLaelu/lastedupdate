@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Restaurant italien">
+  <meta name="theme-color" content="white">
+  <title>La casa di Patti</title>
+  <link rel="stylesheet" type="text/css" href="./photos.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="manifest" href="./manifest.json">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="main-header">
+      <div class="jumbotron">
+        <div id="entete">
+          <h1>La Casa di Patti</h1>
+          <p>Ristorante Italiano</p>
+        </div>
+      </div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">La Casa di Patti</a>
+          </div>
+          <div class="navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="carte.html">Carte</a></li>
+              <li class="active"><a href="photos.html">Photos</a></li>
+              <li><a href="restaurant.html">Restaurant</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="main-container">
+      <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li class="item1 active"></li>
+          <li class="item2"></li>
+          <li class="item3"></li>
+          <li class="item4"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/logo.png" alt="logo">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/scampi.jpg">
+            <div class="carousel-caption">
+              <p>Scampis alla diavola</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/escalope.jpg">
+            <div class="carousel-caption">
+            <p>Escalope milanaise</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/tiramisu.jpg">
+            <div class="carousel-caption">
+            <p>Tiramisu de Patti</p>
+            </div>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="images/resto1.jpg" target="_blank">
+              <img src="images/resto1.jpg" alt="Lights" style="width:100%">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="images/resto2.jpg" target="_blank">
+              <img src="images/resto2.jpg" alt="Nature" style="width:100%">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="images/resto3.jpg" target="_blank">
+              <img src="images/resto3.jpg" alt="Fjords" style="width:100%">
+            </a>
+          </div>
+        </div>
+            <ul class="pagination">
+             <li class="page-item"><a class="page-link" href="#">Précédent</a></li>
+             <li class="active"><a href="photos.html">1</a></li>
+             <li><a href="photos1.html">2</a></li>
+             <li><a href="photos2.html">3</a></li>
+             <li><a href="photos3.html">4</a></li>
+             <li class="page-item"><a class="page-link" href="photos1.html">Suivant</a></li>
+            </ul>
+    <div class="main-footer">
+      <div id="contact">
+        <p class="content5">AntoniDalleNogare© 2018</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  $(document).ready(function(){
+      // Activate Carousel
+      $("#myCarousel").carousel();
+
+      // Enable Carousel Indicators
+      $(".item1").click(function(){
+          $("#myCarousel").carousel(0);
+      });
+      $(".item2").click(function(){
+          $("#myCarousel").carousel(1);
+      });
+      $(".item3").click(function(){
+          $("#myCarousel").carousel(2);
+      });
+      $(".item4").click(function(){
+          $("#myCarousel").carousel(3);
+      });
+      // Enable Carousel Controls
+      $(".left").click(function(){
+          $("#myCarousel").carousel("prev");
+      });
+      $(".right").click(function(){
+          $("#myCarousel").carousel("next");
+      });
+  });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
