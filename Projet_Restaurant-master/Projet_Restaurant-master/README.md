@@ -9,16 +9,11 @@ Minimum 5 pages accessibles par une barre de navigation présente sur toutes les
 
 En utilisant HTML, CSS, Bootstrap. (pas de PHP)
 
-## Par qui ?
 
->Antoni Dalle Nogare
-[Github] https://github.com/tonidano
 
 ## Deployment
 
 Via github page
-
-> https://tonidano.github.io/Projet_Restaurant/
 
 ## Audit
 
